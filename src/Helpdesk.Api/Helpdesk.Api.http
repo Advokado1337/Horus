@@ -1,0 +1,15 @@
+@Helpdesk.Api_HostAddress = http://localhost:5065
+
+###
+GET {{Helpdesk.Api_HostAddress}}/api/tickets
+Accept: application/json
+
+###
+GET {{Helpdesk.Api_HostAddress}}/api/tickets/1
+Accept: application/json
+
+###
+GET {{Helpdesk.Api_HostAddress}}/api/tickets/99
+Accept: application/json
+
+###
