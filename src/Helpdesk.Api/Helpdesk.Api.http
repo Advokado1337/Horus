@@ -13,3 +13,32 @@ GET {{Helpdesk.Api_HostAddress}}/api/tickets/99
 Accept: application/json
 
 ###
+POST {{Helpdesk.Api_HostAddress}}/api/tickets
+Content-Type: application/json
+
+{
+  "title": "Trasig vara",
+  "description": "Koppen var sprucken"
+}
+
+###
+
+POST {{Helpdesk.Api_HostAddress}}/api/tickets
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "Saknar titel"
+}
+
+###
+
+POST {{Helpdesk.Api_HostAddress}}/api/tickets
+Content-Type: application/json
+
+{
+  "id": 999,
+  "title": "Försöker sätta eget id",
+  "description": "Mass assignment-test"
+}
+###
